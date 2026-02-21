@@ -1,0 +1,18 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Data & outputs (usually not committed)
+data/
+results/
+
+# Reports (keep if you want versioned PDFs; otherwise ignore)
+# report/
