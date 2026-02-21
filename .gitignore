@@ -1,4 +1,4 @@
-# OS / Editor
+# OS / editor
 .DS_Store
 Thumbs.db
 .vscode/
@@ -6,13 +6,32 @@ Thumbs.db
 # Python
 __pycache__/
 *.py[cod]
+*.egg-info/
+.build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
 .venv/
 venv/
 env/
+.conda/
 
-# Data & outputs (usually not committed)
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & generated outputs
 data/
 results/
 
-# Reports (keep if you want versioned PDFs; otherwise ignore)
-# report/
+# LaTeX build artifacts
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.bbl
+report/*.blg
