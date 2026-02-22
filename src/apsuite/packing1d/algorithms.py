@@ -5,7 +5,7 @@ from typing import Callable, List, Optional
 
 from apsuite.common.types import PackingResult
 from apsuite.packing1d.validate import validate_items
-
+from apsuite.packing1d.local_search import local_improve_eliminate_bins
 
 def first_fit(items: List[float], capacity: float = 1.0) -> PackingResult:
     """First-Fit bin packing.
@@ -71,3 +71,25 @@ def best_fit_decreasing(items: List[float], capacity: float = 1.0) -> PackingRes
     items = validate_items(items, capacity)
     items_sorted = sorted(items, reverse=True)
     return best_fit(items_sorted, capacity=capacity)
+
+def ffd_local_improve(items: List[float], capacity: float = 1.0) -> PackingResult:
+    """FFD followed by bin-elimination local improvement."""
+    base = first_fit_decreasing(items, capacity=capacity)
+    return local_improve_eliminate_bins(base, capacity=capacity)
+
+def best_of_two(a: PackingResult, b: PackingResult) -> PackingResult:
+    # Deterministic tie-breaker: fewer bins, then smaller max load (optional),
+    # but bins count is what we care about.
+    if b.num_bins < a.num_bins:
+        return b
+    return a
+
+
+def hybrid_ffd_bf(items: List[float], capacity: float = 1.0) -> PackingResult:
+    """
+    Run two heuristics and return the better packing (fewer bins).
+    Motivation: instance-class dependent performance (uniform vs triplets).
+    """
+    r_ffd = first_fit_decreasing(items, capacity=capacity)
+    r_bf = best_fit(items, capacity=capacity)
+    return best_of_two(r_ffd, r_bf)
