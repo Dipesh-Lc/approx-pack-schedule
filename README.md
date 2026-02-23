@@ -1,6 +1,6 @@
 # Approx-Pack-Schedule
 
-**Approximation Algorithms for Packing and Scheduling — Implementation & Empirical Study**
+**Approximation & benchmarking framework for discrete optimization: (1D,2D) packing, scheduling,**
 
 ---
 
