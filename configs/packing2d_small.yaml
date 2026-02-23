@@ -1,0 +1,12 @@
+task: packing2d
+out_dir: results/experiments/packing2d_small
+repetitions: 3
+seed: 1
+
+grid:
+  dist: [uniform, heavy_tail]
+  n: [50, 200]
+
+params:
+  W: 1.0
+  H: 1.0

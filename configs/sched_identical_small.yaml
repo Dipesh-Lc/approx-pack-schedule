@@ -1,0 +1,9 @@
+task: sched_identical
+out_dir: results/experiments/sched_identical_small
+repetitions: 3
+seed: 1
+
+grid:
+  dist: [uniform, heavy_tail]
+  n: [100, 500]
+  m: [5, 10]

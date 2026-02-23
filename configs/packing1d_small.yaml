@@ -1,0 +1,8 @@
+task: packing1d
+out_dir: results/experiments/packing1d_small
+repetitions: 3
+seed: 1
+
+grid:
+  dist: [uniform, bimodal]
+  n: [100, 500]

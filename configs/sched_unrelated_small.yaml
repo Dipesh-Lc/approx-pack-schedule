@@ -1,0 +1,15 @@
+task: sched_unrelated
+
+out_dir: results/experiments/sched_unrelated_small
+
+repetitions: 3
+seed: 42
+
+grid:
+  dist: [random_matrix, lognormal_machines]
+  n: [20, 40]
+  m: [4, 5]
+
+params:
+  use_local_search: true
+  ls_time_limit_s: 0.01
