@@ -1,0 +1,11 @@
+task: packing1d
+out_dir: results/experiments/packing1d_scale
+repetitions: 10
+seed: 100
+
+grid:
+  dist: [uniform, bimodal, heavy_tail]
+  n: [100, 250, 500, 1000, 2000, 4000]
+
+params:
+  capacity: 1.0

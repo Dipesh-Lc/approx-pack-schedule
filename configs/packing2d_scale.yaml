@@ -1,0 +1,12 @@
+task: packing2d
+out_dir: results/experiments/packing2d_scale
+repetitions: 10
+seed: 200
+
+grid:
+  dist: [uniform, bimodal, heavy_tail]
+  n: [50, 100, 200, 400, 800]
+
+params:
+  W: 1.0
+  H: 1.0
