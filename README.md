@@ -25,7 +25,7 @@ This repository is designed as an algorithm engineering project combining theory
 
 ---
 
-# 🚀 Implemented Phases
+# Implemented Phases
 
 ---
 
@@ -43,9 +43,9 @@ This repository is designed as an algorithm engineering project combining theory
 
 Volume lower bound:
 
-\[
+$$
 LB = \left\lceil \sum_i s_i \right\rceil
-\]
+$$
 
 ### Metrics
 
@@ -68,11 +68,11 @@ LB = \left\lceil \sum_i s_i \right\rceil
 
 Area lower bound:
 
-\[
+$$
 LB = \left\lceil \frac{\sum_i w_i h_i}{W \cdot H} \right\rceil
-\]
+$$
 
-Rotation currently disabled (can be extended later).
+Rotation is currently not considered.
 
 ---
 
@@ -85,9 +85,9 @@ Rotation currently disabled (can be extended later).
 
 ### Lower Bound
 
-\[
+$$
 LB = \max \left( \frac{\sum_j p_j}{m}, \max_j p_j \right)
-\]
+$$
 
 ### Empirical Observation
 
@@ -106,17 +106,17 @@ Minimize makespan \( T \)
 
 Subject to:
 
-\[
+$$
 \sum_i x_{ij} = 1
-\]
+$$
 
-\[
+$$
 \sum_j p_{ij} x_{ij} \le T
-\]
+$$
 
-\[
+$$
 0 \le x_{ij} \le 1
-\]
+$$
 
 ### Solver
 
