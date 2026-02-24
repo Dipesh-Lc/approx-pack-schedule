@@ -4,14 +4,14 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **Approx-Pack-Schedule** is a research-oriented implementation and empirical evaluation of classical approximation algorithms for:
 
-- 📦 1D Bin Packing  
-- 📦 2D Bin Packing  
-- ⏱ Identical Machine Scheduling  
-- 🧮 Unrelated Machine Scheduling (LP Relaxation + Rounding)
+-  1D Bin Packing  
+-  2D Bin Packing  
+-  Identical Machine Scheduling  
+-  Unrelated Machine Scheduling (LP Relaxation + Rounding)
 
 The project emphasizes:
 
@@ -29,7 +29,7 @@ This repository is designed as an algorithm engineering project combining theory
 
 ---
 
-## Phase 1 — 1D Bin Packing
+## Phase 1 -- 1D Bin Packing
 
 ### Algorithms
 
@@ -56,7 +56,7 @@ $$
 
 ---
 
-## Phase 2 — 2D Bin Packing
+## Phase 2 -- 2D Bin Packing
 
 ### Heuristics
 
@@ -76,7 +76,7 @@ Rotation is currently not considered.
 
 ---
 
-## Phase 3 — Identical Machine Scheduling
+## Phase 3 -- Identical Machine Scheduling
 
 ### Algorithms
 
@@ -98,7 +98,7 @@ $$
 
 ---
 
-## Phase 4 — Unrelated Machine Scheduling
+## Phase 4 -- Unrelated Machine Scheduling
 
 ### LP Relaxation
 
@@ -141,7 +141,7 @@ Typically:
 
 ---
 
-## Phase 5 — Config-Driven Experiment Harness
+## Phase 5 -- Config-Driven Experiment Harness
 
 Experiments are fully configurable via YAML:
 
@@ -173,7 +173,7 @@ Results are saved under:
 results/experiments/<experiment_name>/
 ```
 
-## Phase 6 — Experimental Study
+## Phase 6 -- Experimental Study
 
 ### Synthetic Distributions
 
@@ -202,7 +202,7 @@ All plots use **Matplotlib**.
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```text
 src/apsuite/
@@ -233,23 +233,23 @@ environment.yml
 
 ---
 
-# ⚙️ Installation
+#  Installation
 
-## 1️⃣ Clone repository
+## 1️ Clone repository
 
 ```bash
 git clone https://github.com/Dipesh-Lc/approx-pack-schedule.git
 cd approx-pack-schedule
 ```
 
-## 2️⃣ Create environment
+## 2️ Create environment
 
 ```bash
 conda env create -f environment.yml
 conda activate approx-pack-schedule
 ```
 
-## 3️⃣ Install package (editable mode)
+## 3️ Install package (editable mode)
 
 ```bash
 pip install -e .
@@ -257,7 +257,7 @@ pip install -e .
 
 ---
 
-# 🧪 Run Tests
+#  Run Tests
 
 ```bash
 pytest -q
@@ -274,7 +274,7 @@ All phases are covered by unit tests:
 
 ---
 
-# 📊 Running Experiments
+#  Running Experiments
 
 ## Example
 
@@ -290,7 +290,7 @@ python scripts/plot_experiments.py --exp_dir results/experiments/packing1d_scale
 
 ---
 
-# 🔬 Reproducibility
+#  Reproducibility
 
 - Explicit random seeds  
 - Config-driven instance generation  
@@ -302,7 +302,7 @@ Designed to mirror research-grade experimental pipelines.
 
 ---
 
-# 📈 Sample Observations
+#  Sample Observations
 
 ## 1D Packing
 
@@ -327,7 +327,7 @@ Designed to mirror research-grade experimental pipelines.
 
 ---
 
-# 🧠 Design Philosophy
+#  Design Philosophy
 
 - Classical approximation algorithms  
 - Clear separation of:
@@ -340,12 +340,12 @@ Designed to mirror research-grade experimental pipelines.
 
 ---
 
-# 🛠 Future Extensions
+#  Future Extensions
 
 Potential future work:
 
 - 2D packing with rotation  
-- Karmarkar–Karp heuristic  
+- Karmarkar-Karp heuristic  
 - Exact ILP solver comparisons  
 - Statistical confidence intervals  
 - Log-scale runtime plots  
@@ -354,7 +354,7 @@ Potential future work:
 
 ---
 
-# 📚 References
+#  References
 
 - Coffman, Garey, Johnson -- Bin Packing  
 - Graham (1966) -- List Scheduling  
@@ -363,24 +363,24 @@ Potential future work:
 
 ---
 
-# 🏁 Project Status
+#  Project Status
 
-- ✅ Phase 1 — 1D Packing  
-- ✅ Phase 2 — 2D Packing  
-- ✅ Phase 3 — Identical Scheduling  
-- ✅ Phase 4 — Unrelated Scheduling  
-- ✅ Phase 5 — Experiment Harness  
-- ✅ Phase 6 — Experimental Evaluation  
+- ✅ Phase 1 -- 1D Packing  
+- ✅ Phase 2 -- 2D Packing  
+- ✅ Phase 3 -- Identical Scheduling  
+- ✅ Phase 4 -- Unrelated Scheduling  
+- ✅ Phase 5 -- Experiment Harness  
+- ✅ Phase 6 -- Experimental Evaluation  
 
 ---
 
-# 📜 License
+#  License
 
 MIT License
 
 ---
 
-## 👤 Author
+##  Author
 
 **Dipesh**
 
